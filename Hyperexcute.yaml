@@ -1,0 +1,64 @@
+# ---
+# version: 0.1
+# globalTimeout: 90
+# testSuiteTimeout: 90
+# testSuiteStep: 90
+# parallelism: 2
+# retryOnFailure: false
+
+# runson: linux
+# appium: true
+# matrix:
+#   os: ["android","ios"]
+
+# autosplit: true
+
+
+# pre:
+#   - pip install -r requirements.txt
+
+# testDiscovery:
+#   type: raw
+#   mode: dynamic
+#   command: grep '^def ' tests/test_*.py | awk '{print $2}' | sed 's/(.*//' 
+
+# testRunnerCommand: pytest tests/$test
+
+# jobLabel: ['android','iOS', 'appium','pytest','hybrid']
+
+
+# framework:
+#   name: "appium"
+  
+
+
+
+version: 0.1
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+parallelism: 2
+concurrency: 2
+retryOnFailure: false
+
+runson: linux
+appium: true
+# matrix:
+#   os: ["android", "ios"]
+
+autosplit: true
+
+pre:
+  - pip install -r requirements.txt
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: grep -l 'def' tests/test_*.py 
+  # command: echo "test_android_app.py"
+testRunnerCommand: pytest $test
+
+jobLabel: ['android', 'iOS', 'appium', 'pytest', 'hybrid']
+
+framework:
+  name: "appium"

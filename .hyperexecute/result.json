@@ -1,0 +1,145 @@
+{
+    "id": "021ff7a0-7227-4a7f-9a59-02fe67a1a623",
+    "created_at": "2025-05-19T19:03:37Z",
+    "update_at": "2025-05-19T19:05:28Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2025-05-19T19:04:12Z",
+    "end_time": "2025-05-19T19:05:28Z",
+    "summary": {
+        "total_time": 76000000000,
+        "execution_time": 76000000000,
+        "total_tasks": 2,
+        "build_time_consumed": 129000000000,
+        "jobTestExecutionTime": "29s",
+        "failed_tasks": 0,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "scenario": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 2
+            }
+        },
+        "status": "completed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=021ff7a0-7227-4a7f-9a59-02fe67a1a623"
+    },
+    "tasks": [
+        {
+            "id": "HYPL-32518-1747681451310596044PSW",
+            "os": "linux",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2025-05-19T19:04:11Z",
+            "update_at": "2025-05-19T19:05:28Z",
+            "start_time": "2025-05-19T19:04:12Z",
+            "end_time": "2025-05-19T19:05:28Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "0720aec0-777d-45ca-b251-b6de88eb95e4",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "tests/test_android_app.py",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-05-19T19:04:18Z",
+                    "started_at": "2025-05-19T19:04:27Z",
+                    "updated_at": "2025-05-19T19:05:27Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "3601f1a7-1eed-499f-999c-f9f166f6634e",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2025-05-19T19:04:18Z",
+                    "started_at": "2025-05-19T19:04:18Z",
+                    "updated_at": "2025-05-19T19:04:18Z",
+                    "order": 2,
+                    "task_number": 1
+                },
+                {
+                    "id": "c6010f30-b0d6-40c5-9d87-7d9a172592f6",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-05-19T19:04:12Z",
+                    "started_at": "2025-05-19T19:04:12Z",
+                    "updated_at": "2025-05-19T19:04:18Z",
+                    "order": 1,
+                    "task_number": 1
+                }
+            ]
+        },
+        {
+            "id": "HYPL-32518-1747681451355101195BCP",
+            "os": "linux",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2025-05-19T19:04:11Z",
+            "update_at": "2025-05-19T19:05:05Z",
+            "start_time": "2025-05-19T19:04:12Z",
+            "end_time": "2025-05-19T19:05:05Z",
+            "group_number": 2,
+            "stages": [
+                {
+                    "id": "87746b40-8309-420b-bb69-6e81b0a5d641",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2025-05-19T19:04:12Z",
+                    "started_at": "2025-05-19T19:04:12Z",
+                    "updated_at": "2025-05-19T19:04:18Z",
+                    "order": 1,
+                    "task_number": 2
+                },
+                {
+                    "id": "b98b4cde-927d-4058-9365-c62da3061437",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "tests/test_ios_app.py",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2025-05-19T19:04:18Z",
+                    "started_at": "2025-05-19T19:04:27Z",
+                    "updated_at": "2025-05-19T19:05:05Z",
+                    "order": 3,
+                    "task_number": 2
+                },
+                {
+                    "id": "bed217d0-d0d1-40c5-81d3-1ea85521fdc3",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2025-05-19T19:04:18Z",
+                    "started_at": "2025-05-19T19:04:18Z",
+                    "updated_at": "2025-05-19T19:04:18Z",
+                    "order": 2,
+                    "task_number": 2
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}

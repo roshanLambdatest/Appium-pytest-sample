@@ -1,0 +1,4 @@
+pytest
+python-dotenv
+appium-python-client==2.10.0
+selenium==4.9.1

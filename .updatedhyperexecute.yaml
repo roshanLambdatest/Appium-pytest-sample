@@ -1,0 +1,152 @@
+version: "0.1"
+user: LT-USERNAME
+key: LT-ACCESSKEY
+testSuites: []
+pre: [pip install -r requirements.txt]
+preDirectives:
+    commands: [pip install -r requirements.txt]
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+postDirectives:
+    commands: []
+    shell: ""
+    workingDirectory: ""
+jobLabel:
+    - android
+    - iOS
+    - appium
+    - pytest
+    - hybrid
+runson: linux
+autosplit: true
+concurrency: 2
+testDiscovery:
+    autosubset: true
+    command: grep -l 'def' tests/test_*.py
+    mode: dynamic
+    type: raw
+testRunnerCommand: pytest $test
+globalTimeout: 90
+tunnelOpts:
+    testsPerTunnel: 10
+testSuiteTimeout: 90
+testSuiteStep: 90
+jobID: 021ff7a0-7227-4a7f-9a59-02fe67a1a623
+parallelism: 2
+codeDirectory: appium-pytest-sample
+framework:
+    name: appium
+    flags: []
+    discoveryFlags: []
+    discoveryMode: ""
+    discoveryType: ""
+    runnerFlags: []
+    workingDirectory: ""
+    isTestNGXMLSuite: false
+    defaultReports: false
+    args:
+        appPath: ""
+        testSuitePath: ""
+        xcTestPlanPath: ""
+        shards:
+            mappings: []
+        filters:
+            attributes: []
+        devices: []
+        deviceSelectionStrategy: ""
+        appId: ""
+        testSuiteAppId: ""
+        xcTestPlanId: ""
+        skipXMLOnRun: false
+        skipInstall: false
+        disableReleaseDevice: false
+        platformName: ""
+        isRealMobile: null
+        avoidAppLaunch: false
+        queueTimeout: 0
+        uninstallPreviousBuild: false
+        language: ""
+        locale: ""
+        preservedDevice: false
+        fixedIP: ""
+        resignApp: true
+        minorOsVersion: false
+        playwrightRD: false
+        mobileDC: null
+        skipUninstallPreviousBuild: false
+        isVirtualDevice: false
+        mitmProxy: false
+        networkHar: false
+        artifacts: false
+        otherApps: []
+        customData: {}
+        smartUI: null
+    additional_args: null
+    licenseKey: ""
+    userdefinediscovery: false
+    toscaArgs: null
+    version: ""
+    downloadURL: ""
+    baseCommand: ""
+cypress: false
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+testType: android/appium
+combineTasksInMatrixMode: false
+captureScreenRecordingForScenarios: false
+maxRetriesPreSteps: 0
+triggerMode: false
+sourcePayload:
+    verifySSL: true
+collectLocalGitData: true
+dynamicAllocation: false
+appium: "true"
+platformConfig: null
+differentialUpload:
+    enabled: false
+    ttlHours: null
+    forcedDisabled: false
+project:
+    id: ""
+    name: ""
+    type: custom
+meta: {}
+alwaysRunPostSteps: false
+errorCategorizedOnFailureOnly: false
+testDiscoveryResultV3: []
+storageType: ""
+localHTTPProxy: ""
+regionConfig:
+    vm: []
+    storage:
+        region: ""
+        enabled: false
+        name: ""
+        platform: azure
+waitForArtefactsUpload: false
+unzipPayload: false
+projectpath: ""
+accessibilityJob: false
+globalPre:
+    mode: ""
+    commands: []
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+    completed: false
+    runson: ""
+    cache: false
+    yamlPath: null
+    type: ""
+    location: ""
+globalPost:
+    mode: ""
+    commands: []
+    shell: ""
+    workingDirectory: ""
+    completed: false
+    runson: ""
+slackChannel: ""
+whiteLabelProductTag: ""
+sprofilePath: ""
